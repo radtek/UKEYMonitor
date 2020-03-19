@@ -122,7 +122,7 @@
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_shared|Win32'">
-    <OutDir>..\bin\</OutDir>
+    <OutDir>.\bin\</OutDir>
     <IntDir>obj\UKEYMonitor\$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.exe</TargetExt>
@@ -163,7 +163,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>PocoFoundationd.lib;PocoJSONd.lib;PocoUtild.lib;PocoDatad.lib;PocoDataSQLited.lib;SoFProviderd.lib;Iphlpapi.lib;msi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin\UKEYMonitord.exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -200,7 +200,7 @@ xcopy /y $(ProjectDir)devicelist.json $(OutDir)</Command>
     </ClCompile>
     <Link>
       <AdditionalDependencies>PocoFoundation.lib;PocoJSON.lib;PocoUtil.lib;PocoData.lib;PocoDataSQLite.lib;SoFProvider.lib;ws2_32.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\bin\UKEYMonitor.exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\lib;..\lib\libpoco;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
