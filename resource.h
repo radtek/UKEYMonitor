@@ -18,8 +18,8 @@
 
 #define WMAIN				2 
 #define WMajor				0 
-#define WMinor				6 
-#define WFileIndex			79
+#define WMinor				8 
+#define WFileIndex			81
 
 #define VTSPRODUCTVERSION			WMAIN,WMajor,WMinor,WFileIndex
 #define VTSPRODUCTVERSION_STR		STRINGIZE(WMAIN) "." STRINGIZE(WMajor) "." STRINGIZE(WMinor) "." STRINGIZE(WFileIndex)
