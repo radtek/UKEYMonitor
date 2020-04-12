@@ -18,7 +18,7 @@
 
 #define WMAIN				2 
 #define WMajor				0 
-#define WMinor				8 
+#define WMinor				11
 #define WFileIndex			81
 
 #define VTSPRODUCTVERSION			WMAIN,WMajor,WMinor,WFileIndex
